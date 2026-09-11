@@ -1,0 +1,18 @@
+.starfield {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.nebula-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(60% 45% at 82% -5%, rgba(107, 63, 184, 0.35), transparent 60%),
+    radial-gradient(50% 40% at 8% 15%, rgba(91, 141, 239, 0.14), transparent 65%),
+    radial-gradient(70% 60% at 50% 115%, rgba(75, 46, 131, 0.4), transparent 60%),
+    var(--void);
+}

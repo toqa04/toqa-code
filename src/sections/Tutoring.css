@@ -1,0 +1,52 @@
+.tutoring-panel {
+  position: relative;
+  padding: clamp(2.2rem, 5vw, 3.5rem);
+  border: 1px solid var(--line-strong);
+  border-radius: 22px;
+  background:
+    radial-gradient(120% 140% at 100% 0%, rgba(107, 63, 184, 0.35), transparent 55%),
+    linear-gradient(160deg, var(--nebula-soft), var(--void-soft));
+  overflow: hidden;
+}
+
+.tutoring-panel::after {
+  content: "";
+  position: absolute;
+  right: -60px;
+  bottom: -60px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(240, 193, 92, 0.18), transparent 70%);
+}
+
+.tutoring-text {
+  max-width: 640px;
+  position: relative;
+}
+
+.tutoring-text h2 {
+  font-size: var(--step-3);
+  margin-block: 0.8rem 1rem;
+}
+
+.tutoring-text > p {
+  font-size: var(--step-1);
+  margin-bottom: 1.6rem;
+}
+
+.tutoring-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.tutoring-topics li {
+  font-size: var(--step--1);
+  color: var(--ink-100);
+  border: 1px solid var(--line-strong);
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(244, 241, 251, 0.04);
+}
